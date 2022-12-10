@@ -1,5 +1,7 @@
+/* Variables */
 $accent-red: rgb(255, 62, 62);
 
+/* Global selectors */
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -9,6 +11,7 @@ $accent-red: rgb(255, 62, 62);
 	color: white
 }
 
+/* Basic Styles */
 body {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	margin: 0;

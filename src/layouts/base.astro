@@ -14,9 +14,7 @@ const { route } = Astro.props;
     <BaseHead title={`${route} | ${SITE_TITLE}`} />
   </head>
   <body>
-    <div id="header-container">
-      <Header />
-    </div>
+    <Header />
     <main>
       <slot />
     </main>
@@ -26,10 +24,6 @@ const { route } = Astro.props;
 
       main {
         padding: 1%;
-      }
-
-      div#header-container {
-        min-height: 54px;
       }
     </style>
   </body>
