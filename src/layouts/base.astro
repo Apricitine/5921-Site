@@ -1,0 +1,36 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE } from "../config";
+import "../styles/global.scss";
+
+const { route } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={`${route} | ${SITE_TITLE}`} />
+  </head>
+  <body>
+    <div id="header-container">
+      <Header />
+    </div>
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <style lang="scss">
+      @import "../styles/global.scss";
+
+      main {
+        padding: 1%;
+      }
+
+      div#header-container {
+        min-height: 54px;
+      }
+    </style>
+  </body>
+</html>

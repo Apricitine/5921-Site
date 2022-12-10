@@ -1,1 +1,1 @@
-export const SITE_TITLE = '5921 Blockheads';
+export const SITE_TITLE = 'Blockheads 5921';

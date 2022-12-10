@@ -10,14 +10,17 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 <a id="button" href={href} class:list={[className, { active: isActive }]} {...props}>
 	<slot />
 </a>
-<style>
+<style lang="scss">
+	@import '../styles/global.scss';
+
 	a#button {
-    padding: 0.85%;
-    background: blue;
+    padding: 1.7%;
+    background: $accent-red;
+    border-radius: 6px;
 		text-decoration: none;
-	}
-	a.active {
-		font-weight: bolder;
-		text-decoration: underline;
+
+		&:hover {
+			
+		}
 	}
 </style>
