@@ -15,21 +15,24 @@ import '../styles/global.scss';
         <h2>BLOCKHEADS 5921</h2>
       </a>
     </section>
+
     <HeaderLink href="/about">About</HeaderLink>
-    |
+    <span>|</span>
     <HeaderLink href="/docs">Documentation</HeaderLink>
-    |
+    <span>|</span>
     <HeaderLink href="/store">Store</HeaderLink>
   </nav>
 </header>
+
 <style lang="scss">
+  @import "../styles/global.scss";
   header {
     box-shadow: 0 1px 5px rgb(25, 25, 25);
     background: rgba(25, 25, 25, 0.947);
     backdrop-filter: blur(5px);
     min-width: 100%;
     position: sticky;
-    min-height: 54px;
+    min-height: $header-min-height;
     top: 0;
   }
 
@@ -39,7 +42,11 @@ import '../styles/global.scss';
     align-items: center;
     justify-content: space-evenly;
     width: 60%;
-    min-height: 54px;
+    height: $header-min-height;
+
+    span {
+      user-select: none;
+    }
   }
 
   section#home-link {
@@ -48,6 +55,7 @@ import '../styles/global.scss';
     border: 2px solid transparent;
     transition: all 0.125s ease-in-out;
     border-radius: 6px;
+    padding: 2%;
 
     &:hover {
       border: 2px solid rgba(128, 128, 128, 0.251);
@@ -64,7 +72,8 @@ import '../styles/global.scss';
     }
 
     h2 {
-      margin-left: max(0, 5%);
+      margin-left: max(0, 2.5%);
+      font-size: 1.6rem;
     }
   }
 </style>

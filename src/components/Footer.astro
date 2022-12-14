@@ -3,13 +3,32 @@ const today = new Date();
 ---
 
 <footer>
-  &copy; {today.getFullYear()} Apricitine. All rights reserved.
+  <section id="footer-svg"></section>
+  <section id="data">
+    &copy; {today.getFullYear()} Apricitine. All rights reserved.
+  </section>
 </footer>
-<style>
+<style lang="scss">
   footer {
     padding: 2%;
     text-align: center;
     color: white;
     text-shadow: 0 0 10px white;
+    padding: 0;
+
+    section#footer-svg {
+      display: block;
+      background-image: url("/footer-layers.svg");
+      aspect-ratio: 720/240;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    section#data {
+      width: 100%;
+      height: 10vh;
+      background: #871400;
+    }
   }
 </style>
