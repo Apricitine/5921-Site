@@ -70,6 +70,8 @@ const welcomeMessage = "Think outside the block.";
         deleniti neque minus quidem similique molestias temporibus delectus ex
         porro non ipsam, corrupti vitae aperiam ipsa inventore natus?
       </p>
+      <embed src="/svg/blob.svg" alt="kitty cat">
+        hello there hi there
     </section>
     <section id="image-container">
       <img
@@ -83,6 +85,11 @@ const welcomeMessage = "Think outside the block.";
 
 <style lang="scss">
   @import "../styles/global.scss";
+
+  img[alt="kitty cat"] {
+    z-index: 2;
+    display: block;
+  }
 
   main {
     display: flex;
