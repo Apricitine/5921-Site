@@ -1,3 +1,2 @@
 # Big Fat Work In Progress
-im working on lchs workmaster and paltracker so this site won't be done for a while
-oh
+This site can't be a part of the 5921 organization because vercel makes you pay if the repo is in an organization
