@@ -20,7 +20,11 @@ export default defineConfig({
     tailwind(),
     storyblok({
       accessToken: env.STORYBLOK_TOKEN,
-      components: {},
+      components: {
+        docsPost: "storyblok/DocsPost",
+        docsPostList: "storyblok/DocsPostList",
+        page: "storyblok/Page",
+      },
       apiOptions: {
         region: "us",
       },
