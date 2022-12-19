@@ -5,6 +5,7 @@ const welcomeMessage = "Think outside the block.";
 ---
 
 <Base route="Home">
+  <embed src="/svg/blob.svg">
   <main>
     <section id="text-container">
       <div id="title-container">
@@ -70,8 +71,6 @@ const welcomeMessage = "Think outside the block.";
         deleniti neque minus quidem similique molestias temporibus delectus ex
         porro non ipsam, corrupti vitae aperiam ipsa inventore natus?
       </p>
-      <embed src="/svg/blob.svg">
-        hello there hi there
     </section>
     <section id="image-container">
       <img
@@ -135,5 +134,12 @@ const welcomeMessage = "Think outside the block.";
       position: sticky;
       z-index: -1;
     }
+  }
+
+  embed {
+    position: absolute;
+    z-index: -5;
+    width: 20%;
+    transform: translate(200%);
   }
 </style>

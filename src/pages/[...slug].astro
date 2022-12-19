@@ -1,0 +1,21 @@
+---
+import { useStoryblokApi } from "@storyblok/astro";
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
+import Base from "../layouts/base.astro";
+
+const storyblokApi = useStoryblokApi();
+const slug = Astro.params.slug === undefined ? "home" : Astro.params.slug;
+let content;
+try {
+  const { data } = await storyblokApi.get(`cdn/stories/${slug}`, {
+    version: import.meta.env.DEV ? "draft" : "published",
+  });
+  content = data.story.content;
+} catch (error) {
+  return Astro.redirect("/404");
+}
+---
+
+<Base>
+  <StoryblokComponent blok={content} />
+</Base>
