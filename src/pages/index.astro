@@ -5,7 +5,10 @@ const welcomeMessage = "Think outside the block.";
 ---
 
 <Base route="Home">
-  <embed src="/svg/blob.svg">
+  <embed src="/svg/blob.svg" id="robo-top">
+  <embed src="/svg/blob.svg" id="robo-side">
+  <embed src="/svg/blob.svg" id="robo-other">
+  <embed src="/svg/blob.svg" id="robo-other-other">
   <main>
     <section id="text-container">
       <div id="title-container">
@@ -117,6 +120,9 @@ const welcomeMessage = "Think outside the block.";
           text-shadow: 0 0 10px white;
           margin: 0;
           font-weight: 900;
+          user-select: none;
+          border-radius: 50px;
+
         }
       }
 
@@ -133,13 +139,38 @@ const welcomeMessage = "Think outside the block.";
       justify-content: center;
       position: sticky;
       z-index: -1;
+
+      img {
+        border-radius: 50%;
+        box-shadow: 0 0 40px rgb(230, 64, 64);
+        position: relative;
+        z-index: -5;
+      }
     }
   }
 
   embed {
     position: absolute;
     z-index: -5;
-    width: 20%;
-    transform: translate(200%);
+
+    &#robo-top {
+      width: 20%;
+      transform: translate(200%, -10%);
+    }
+
+    &#robo-side {
+      width: 30%;
+      transform: translate(225%, -20%);
+    }
+
+    &#robo-other {
+      width: 25%;
+      transform: translate(5%, 55%);
+    }
+
+    &#robo-other-other {
+      width: 15%;
+      transform: translate(250%, 175%);
+    }
   }
 </style>
