@@ -1,11 +1,12 @@
 ---
 import Base from "../layouts/base.astro";
+import Blob from "../components/Blob.svelte"
 
 const welcomeMessage = "Think outside the block.";
 ---
 
 <Base route="Home">
-  <embed src="/svg/blob.svg" id="robo-top">
+  <Blob imagePath="/robo-top.jpg" id="robo-top" />
   <embed src="/svg/blob.svg" id="robo-side">
   <embed src="/svg/blob.svg" id="robo-other">
   <embed src="/svg/blob.svg" id="robo-other-other">
@@ -122,7 +123,7 @@ const welcomeMessage = "Think outside the block.";
           font-weight: 900;
           user-select: none;
           border-radius: 50px;
-
+          background: radial-gradient(rgba(44, 44, 44, 0.253), transparent, transparent);
         }
       }
 
