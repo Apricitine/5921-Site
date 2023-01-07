@@ -1,79 +1,33 @@
 ---
 import Base from "../layouts/base.astro";
-import Blob from "../components/Blob.svelte"
 
 const welcomeMessage = "Think outside the block.";
 ---
 
 <Base route="Home">
-  <Blob imagePath="/robo-top.jpg" id="robo-top" />
-  <embed src="/svg/blob.svg" id="robo-side">
-  <embed src="/svg/blob.svg" id="robo-other">
-  <embed src="/svg/blob.svg" id="robo-other-other">
+  <embed src="/svg/blob-top.svg" id="robo-top" />
+  <embed src="/svg/blob-side.svg" id="robo-side" />
+  <embed src="/svg/blob-other.svg" id="robo-other" />
+  <embed src="/svg/blob-other-other.svg" id="robo-other-other" />
   <main>
     <section id="text-container">
       <div id="title-container">
         <h1>{welcomeMessage.toLocaleUpperCase()}</h1>
       </div>
       <div id="placeholder-space-title"></div>
+      <h2>Welcome to the 5921 website.</h2>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. In velit,
-        illo quod odio debitis nesciunt, pariatur vitae ad deserunt esse ex
-        reprehenderit beatae provident similique necessitatibus nostrum,
-        fugiat aliquam doloribus quas sed dolor harum corrupti ullam? Illum
-        voluptatibus explicabo odit maiores rem aspernatur laborum ipsa vero
-        pariatur illo totam libero ullam inventore eum omnis voluptas eaque
-        unde quibusdam porro, dolore veritatis minus quidem assumenda. Vel
-        error, dolore delectus minus ratione dolorum sit recusandae voluptatum
-        labore omnis iure impedit quam excepturi soluta voluptas saepe
-        exercitationem explicabo placeat sequi similique blanditiis eum non
-        quisquam enim? Vitae cum eos ipsam eaque libero dolor minima officiis
-        repellendus aperiam fuga quod modi aspernatur exercitationem
-        obcaecati, facere, delectus suscipit. Quia maxime quaerat possimus
-        voluptatibus deleniti praesentium ratione porro voluptates id adipisci
-        aliquam expedita fugit deserunt harum iure, dolores facere
-        necessitatibus debitis vel esse. Asperiores dolores perferendis
-        ratione? Maiores esse deserunt ipsam expedita totam facilis saepe
-        cupiditate quisquam. Officia necessitatibus libero debitis, cum fugiat
-        voluptatum repudiandae ipsum, delectus eveniet, earum molestias nulla.
-        Eius quo id ipsum, modi impedit voluptatum vitae repellat iste quia,
-        natus iusto consequatur molestias adipisci nemo accusantium fugit.
-        Autem officiis consequuntur adipisci culpa reprehenderit consequatur
-        inventore veniam accusantium perspiciatis, est eius nulla dolore,
-        animi at maxime et maiores praesentium ducimus doloribus rerum
-        distinctio sapiente perferendis? Minus voluptatum quo vero possimus
-        eaque earum asperiores quam aut facere sequi similique laudantium,
-        eligendi, inventore praesentium voluptate odio quas assumenda a magnam
-        sapiente! Obcaecati nam eius ex aliquam. Itaque quis cupiditate, dolor
-        unde vitae ipsam perferendis fuga quos, saepe dolorem dolorum libero
-        ipsa necessitatibus amet sapiente quisquam sunt iste ea voluptas
-        error! Dolor exercitationem nisi modi iusto veritatis reiciendis quia
-        ipsa quaerat magni accusantium, possimus voluptatum, error maiores
-        distinctio excepturi totam ullam delectus debitis. Fugiat doloribus
-        ratione blanditiis deserunt expedita cumque nostrum eos distinctio
-        nisi. Alias recusandae qui animi nostrum perspiciatis blanditiis ipsa
-        praesentium, ad veritatis dolore nesciunt consequatur beatae maiores.
-        Vitae maxime autem ad velit cum, vero odio est illo officia nemo
-        laudantium sequi magni necessitatibus eos et praesentium nulla
-        inventore ullam deleniti fuga blanditiis illum in ab. Velit debitis
-        dolor quam consequuntur optio aperiam, autem ipsam perspiciatis rerum
-        asperiores doloribus, blanditiis eos ipsa nihil temporibus atque! Odio
-        qui illo iste ea alias nam. Quasi exercitationem soluta
-        necessitatibus, voluptate dicta vero beatae nulla quis perspiciatis ea
-        quos laborum ratione suscipit deserunt nisi fuga ad praesentium velit
-        provident deleniti recusandae harum? Harum tenetur facere accusantium
-        inventore dignissimos, aspernatur alias, dolorum perspiciatis aliquid
-        consectetur possimus, necessitatibus ipsam impedit delectus ipsa
-        consequuntur tempore. Totam omnis corporis et magnam commodi harum
-        mollitia reprehenderit, officiis inventore eaque minima exercitationem
-        natus voluptate? Voluptate repellat quasi ipsa consequuntur tenetur
-        beatae qui distinctio ad, laborum rem inventore similique fuga neque
-        veritatis voluptatem itaque nemo perferendis quia ullam modi provident
-        soluta quisquam? Dolore sapiente explicabo quia similique rem nobis
-        velit, aliquam cumque quae dolorem assumenda ipsum id iusto magni
-        obcaecati repudiandae, modi quasi quidem atque ex. Quam repudiandae
-        deleniti neque minus quidem similique molestias temporibus delectus ex
-        porro non ipsam, corrupti vitae aperiam ipsa inventore natus?
+        Hi! We're the Blockheads; a FIRST TECH CHALLENGE robotics team based in
+        La Canada California. We're a part of the La Canada Engineering Club,
+        and we're one of the two FTC teams that are a part of the organization.
+        Our team is the non-advanced team, so trust us when we say that we have
+        a long way to go. We're always learning and improving; this website will
+        be a sort home base for us to organize the documentation for our code,
+        CAD, and other stuff.
+        <br />
+        <br />
+        Aside from that, not much to say! You can find some unfinished documentation
+        on this site and some more stuff about us, too. Obviously this website is not complete and is currently trash. The author will be adding more and more to it later on.
       </p>
     </section>
     <section id="image-container">
@@ -123,7 +77,27 @@ const welcomeMessage = "Think outside the block.";
           font-weight: 900;
           user-select: none;
           border-radius: 50px;
-          background: radial-gradient(rgba(44, 44, 44, 0.253), transparent, transparent);
+          background: radial-gradient(
+            rgba(44, 44, 44, 0.253),
+            transparent,
+            transparent
+          );
+        }
+      }
+
+      h2 {
+        font-size: 3rem;
+        color: rgb(186, 186, 186);
+        text-shadow: 0 0 2px rgb(186, 186, 186);
+        transition: all 400ms ease-in;
+        font-weight: bold;
+        border-radius: 18px;
+        filter: blur(0.3px);
+        margin-bottom: 16%;
+
+        &:hover {
+          text-shadow: 2px 2px 4px rgba(186, 186, 186, 0.384);
+          filter: blur(0px);
         }
       }
 
@@ -146,6 +120,7 @@ const welcomeMessage = "Think outside the block.";
         box-shadow: 0 0 40px rgb(230, 64, 64);
         position: relative;
         z-index: -5;
+        user-select: none;
       }
     }
   }
