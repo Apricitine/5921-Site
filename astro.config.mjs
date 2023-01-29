@@ -2,7 +2,6 @@ import { defineConfig } from "astro/config";
 
 // integrations
 import partytown from "@astrojs/partytown";
-import tailwind from "@astrojs/tailwind";
 /* import storyblok from '@storyblok/astro'; */
 import svelte from "@astrojs/svelte";
 
@@ -13,7 +12,7 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: "https://blockheads-5921.vercel.app",
   output: "server",
-  integrations: [partytown(), tailwind(),
+  integrations: [partytown(),
   /*     storyblok({
       accessToken: process.env.STORYBLOK_TOKEN,
       apiOptions: {
