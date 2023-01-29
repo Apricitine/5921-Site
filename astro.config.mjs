@@ -3,7 +3,6 @@ import { defineConfig } from "astro/config";
 // integrations
 import partytown from "@astrojs/partytown";
 /* import storyblok from '@storyblok/astro'; */
-import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 import vercel from "@astrojs/vercel/serverless";
@@ -24,6 +23,6 @@ export default defineConfig({
         page: 'storyblok/Page',
       }
     }) */
-  svelte()],
+  ],
   adapter: vercel()
 });
