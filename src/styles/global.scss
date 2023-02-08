@@ -3,8 +3,10 @@ $accent-red: #ff3e3e;
 $header-min-height: 100px;
 
 /* Global selectors */
-*, *::after, *::before {
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 ::selection {
@@ -18,9 +20,28 @@ body {
 	margin: 0;
 	background-color: #272727;
 	line-height: 1.5;
-	color: #444;
+	color: #9b9b9b;
 }
 
 a#button {
-  color: white;
+	color: white;
+}
+
+div#blog-article {
+	padding: 1%;
+
+	h1 {
+		font-size: 3rem;
+		color: rgb(186, 186, 186);
+		text-shadow: 0 0 2px rgb(186, 186, 186);
+		transition: all 400ms ease-in;
+		font-weight: bold;
+		border-radius: 18px;
+		transform: translateX(-0.2%);
+
+
+		&:hover {
+			text-shadow: 2px 2px 4px rgba(186, 186, 186, 0.384);
+		}
+	}
 }

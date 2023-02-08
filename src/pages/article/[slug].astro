@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/base.astro';
+import { getEntryBySlug } from 'astro:content';
+
+const entry = await getEntryBySlug('articles', 'leo');
+const { Content, headings } = await entry.render();
+---
+
+<Base route={entry.data.title}>
+  <div id="blog-article">
+    <Content />
+  </div>
+</Base>
+
+<style lang="scss">
+
+</style>

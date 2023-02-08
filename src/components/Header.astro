@@ -29,7 +29,7 @@ import '../styles/global.scss';
   header {
     box-shadow: 0 1px 5px rgb(25, 25, 25);
     background: rgba(25, 25, 25, 0.947);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
     min-width: 100%;
     position: sticky;
     min-height: $header-min-height;
@@ -52,11 +52,16 @@ import '../styles/global.scss';
 
   section#home-link {
     user-select: none;
-    width: 40%;
+    width: 45%;
     border: 2px solid transparent;
     transition: all 0.125s ease-in-out;
     border-radius: 6px;
-    padding: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+
 
     &:hover {
       border: 2px solid rgba(128, 128, 128, 0.251);
@@ -68,8 +73,8 @@ import '../styles/global.scss';
       text-decoration: none;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
       width: 100%;
+      padding: 0;
     }
 
     h2 {
