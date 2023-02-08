@@ -2,16 +2,16 @@ import { defineConfig } from "astro/config";
 
 // integrations
 import partytown from "@astrojs/partytown";
+import vercel from "@astrojs/vercel/serverless";
+import mdx from "@astrojs/mdx";
 /* import storyblok from '@storyblok/astro'; */
 
-// https://astro.build/config
-import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://blockheads-5921.vercel.app",
   output: "server",
-  integrations: [partytown(),
+  integrations: [partytown(), mdx(),
   /*     storyblok({
       accessToken: process.env.STORYBLOK_TOKEN,
       apiOptions: {
