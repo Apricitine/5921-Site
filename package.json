@@ -8,7 +8,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "sync": "astro sync"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.11.6",

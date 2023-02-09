@@ -1,19 +1,83 @@
 ---
 import Base from "../layouts/base.astro";
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 
-const articles = await getCollection('articles');
+const articles = await getCollection("articles");
 ---
 
 <Base route="Documentation">
-
-<ul>
-  {articles.map(blogPostEntry => (
-    <li>
-      <a href={`/article/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
-    </li>
-  ))}
-</ul>
+  <main id="wrapper">
+    {
+      articles.map((article) => (
+        <a href={`/article/${article.slug}`}>
+          <section top-section>
+            <img
+              src={article.data.image}
+              alt="an article post image"
+              width="100%"
+            />
+          </section>
+          <section id="bottom-title">
+            <h2>{article.data.title}</h2>
+          </section>
+        </a>
+      ))
+    }
+  </main>
 </Base>
 
-<style lang="scss"></style>
+<style lang="scss">
+  main#wrapper {
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25%;
+    grid-auto-rows: 250px;
+    height: fit-content;
+
+    a {
+      border: 3px solid #9b9b9b;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: #9b9b9b;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.285);
+      transition: all 500ms ease;
+      justify-content: end;
+      overflow: hidden;
+
+      &:hover {
+        background: radial-gradient(
+          rgba(255, 255, 255, 0.034),
+          rgba(255, 255, 255, 0.014),
+          rgba(255, 255, 255, 0.002)
+        );
+        transform: scale(1.01);
+        box-shadow: 5px 5px 10px rgba(11, 11, 11, 0.358);
+      }
+
+      section#top-section {
+        img {
+          margin: 0;
+        }
+      }
+
+      section#bottom-title {
+        border-top: 3px solid #9b9b9b;
+        padding: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+          margin: 0;
+          font-size: 1.75rem;
+          color: rgb(186, 186, 186);
+          text-shadow: 0 0 2px rgb(186, 186, 186);
+        }
+      }
+    }
+  }
+</style>
