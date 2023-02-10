@@ -1,0 +1,9 @@
+@mixin shadow-animation() {
+  @keyframes shadow-animation {
+    0% { box-shadow: 0 0 40px rgb(230, 64, 64); }
+    25% { box-shadow: 10px 10px 40px rgb(230, 64, 64); }
+    50% { box-shadow: -10px 10px 40px rgb(230, 64, 64); }
+    75% { box-shadow: -10px -10px 40px rgb(230, 64, 64); }
+    100% { box-shadow: 0px 0px 40px rgb(230, 64, 64); }
+  }
+}

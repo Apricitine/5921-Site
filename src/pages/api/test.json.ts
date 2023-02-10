@@ -1,5 +1,3 @@
-export async function get({ params, request }) {
-  return new Response(JSON.stringify({
-    key: "value"
-  }));
+export async function get() {
+  return new Response("Hello there.");
 }

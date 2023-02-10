@@ -16,7 +16,7 @@
     "@astrojs/rss": "^1.0.3",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/vercel": "^3.0.0",
-    "@storyblok/astro": "^2.0.1",
+    "@trpc/client": "^10.10.0",
     "astro": "^2.0.0",
     "sass": "latest",
     "svelte": "^3.46.4"
