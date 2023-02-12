@@ -6,7 +6,6 @@ specifiers:
   '@astrojs/rss': ^1.0.3
   '@astrojs/sitemap': ^1.0.0
   '@astrojs/vercel': ^3.0.0
-  '@storyblok/astro': ^2.0.1
   '@trpc/client': ^10.10.0
   astro: ^2.0.0
   sass: latest
@@ -18,7 +17,6 @@ dependencies:
   '@astrojs/rss': 1.0.3
   '@astrojs/sitemap': 1.0.0
   '@astrojs/vercel': 3.0.0_astro@2.0.2
-  '@storyblok/astro': 2.0.1
   '@trpc/client': 10.10.0
   astro: 2.0.2_sass@1.58.0
   sass: 1.58.0
@@ -765,19 +763,6 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /@storyblok/astro/2.0.1:
-    resolution: {integrity: sha512-lRO+YkkeUwROCORNqEv3CE5QXw/mof5+cpN67YV/YzTyksuwMSDSJ+Ks/y3c+kW/oQ1hivJ4VFcV049pypqExg==}
-    dependencies:
-      '@storyblok/js': 2.0.5
-      camelcase: 7.0.1
-    dev: false
-
-  /@storyblok/js/2.0.5:
-    resolution: {integrity: sha512-q1HqJmogKmUf/f+4vp/KTUvsMJ42eh/45mlamxQUkA82jilmjIYaDD26dD3sQNaCW1KRmBD1CjaOCHWSoikYiA==}
-    dependencies:
-      storyblok-js-client: 5.2.1
-    dev: false
-
   /@trpc/client/10.10.0:
     resolution: {integrity: sha512-HRVGkOsR4FIYpyQILP84HLbj6pRnLKgxy4AIelTf9d9TxD60M5bNhbR2Uz3hqNSb9a2ppaRJBLv7twlV9b4qHQ==}
     peerDependencies:
@@ -1182,11 +1167,6 @@ packages:
   /camelcase/6.3.0:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
-    dev: false
-
-  /camelcase/7.0.1:
-    resolution: {integrity: sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==}
-    engines: {node: '>=14.16'}
     dev: false
 
   /caniuse-lite/1.0.30001431:
@@ -3347,10 +3327,6 @@ packages:
 
   /sprintf-js/1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
-    dev: false
-
-  /storyblok-js-client/5.2.1:
-    resolution: {integrity: sha512-hj5mB7dpCj5rbzxBJ5whXzJNFDRUcM4Lii6te9/puIl7WbSYor2otp5w7FtRLrMUs3gP1pdAV3+1L2455yOhHA==}
     dev: false
 
   /streamsearch/1.1.0:
