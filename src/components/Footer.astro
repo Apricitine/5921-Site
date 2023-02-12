@@ -5,7 +5,7 @@ const today = new Date();
 <footer>
   <section id="footer-svg"></section>
   <section id="data">
-    <h2>&copy; {today.getFullYear()} Apricitine. All rights reserved.</h2>
+    <h2>&copy; {today.getFullYear()} <a href="https://github.com/apricitine">Apricitine.</a> All rights reserved.</h2>
   </section>
 </footer>
 <style lang="scss">
@@ -29,9 +29,16 @@ const today = new Date();
       width: 100%;
       height: 10vh;
       background: #871400;
-      
+
       h2 {
         margin: 0;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-style: italic;
+
+        }
       }
     }
   }

@@ -1,11 +1,13 @@
 import { z, defineCollection } from 'astro:content';
 
+const zod = z;
+
 export const collections = {
   'articles': defineCollection({
-    schema: z.object({
-      title: z.string(),
-      author: z.string(),
-      image: z.string().optional()
+    schema: zod.object({
+      title: zod.string(),
+      author: zod.string(),
+      image: zod.string().optional()
     })
   })
 };
