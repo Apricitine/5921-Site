@@ -32,5 +32,3 @@ Our main Teleop program is teleop/BaseDriveComplete. It initalises the robot the
 ## Extra Notes
 ---
 We have a lot of unused programs and general junk as of 2/11/23. We'll try to get rid of it. If anything here is outdated, please tell Luke or Leo. The latter can't stand outdated info, and will be happy to update it. If you have any questions, don't hesitate to ask someone. Luke and Leo are/were the main programmers in 5921 for the 2022-23 season, but pretty much everyone should be able to help.
-
-I like vim, and you should try it too!
