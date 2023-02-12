@@ -12,7 +12,6 @@ const { Content } = entry === undefined ? new Error() : await entry.render();
 
 <Base route={entry === undefined ? "Something went wrong." : entry.data.title}>
   <div id="blog-article">
-    Written by {entry.data.author}
     <Content />
   </div>
 </Base>

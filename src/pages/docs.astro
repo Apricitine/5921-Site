@@ -9,7 +9,7 @@ const articles = await getCollection("articles");
   <main id="wrapper">
     {
       articles.map((article) => (
-        <a href={`/article/${article.slug}`}>
+        <a href={`/articles/${article.slug}`}>
           <section top-section>
             <img
               src={article.data.image}
