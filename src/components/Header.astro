@@ -1,26 +1,31 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import '../styles/global.scss';
+import "../styles/global.scss";
 ---
 
 <header>
   <nav>
-    <section id="home-link">
-      <a href="/">
-        <img
-          src="/blockhead-ftc.png"
-          width="15%"
-          alt="blockheads icon for ftc"
-        />
-        <h2>BLOCKHEADS 5921</h2>
-      </a>
-    </section>
+    <section id="left-nav">
+      <section id="home-link">
+        <a href="/">
+          <img
+            src="/blockhead-ftc.png"
+            width="15%"
+            alt="blockheads icon for ftc"
+          />
+          <h2>BLOCKHEADS 5921</h2>
+        </a>
+      </section>
 
-    <HeaderLink href="/about">About</HeaderLink>
-    <span>|</span>
-    <HeaderLink href="/docs">Documentation</HeaderLink>
-    <span>|</span>
-    <HeaderLink href="/store">Store</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+      <span>|</span>
+      <HeaderLink href="/docs">Documentation</HeaderLink>
+      <span>|</span>
+      <HeaderLink href="/store">Store</HeaderLink>
+    </section>
+    <section id="right-nav">
+      <a href="https://github.com/Blockheads-5921">Github</a>
+    </section>
   </nav>
 </header>
 
@@ -40,13 +45,26 @@ import '../styles/global.scss';
   nav {
     display: flex;
     padding: 1%;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 60%;
+    width: 100%;
     height: $header-min-height;
 
-    span {
-      user-select: none;
+    section#left-nav {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+
+      span {
+        user-select: none;
+      }
+    }
+
+    section#right-nav {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: right;
     }
   }
 
@@ -61,7 +79,6 @@ import '../styles/global.scss';
     float: left;
     display: flex;
     justify-content: space-between;
-
 
     &:hover {
       border: 2px solid rgba(128, 128, 128, 0.251);
