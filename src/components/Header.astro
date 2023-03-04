@@ -25,7 +25,7 @@ import "../styles/global.scss";
     </section>
     <section id="right-nav">
       <a href="https://github.com/Blockheads-5921">
-        <embed src="/svg/github.svg" type="image/svg+xml" />
+        <img src="/svg/github.svg" alt="Blockhead's GitHub link." />
       </a>
     </section>
   </nav>
@@ -67,10 +67,18 @@ import "../styles/global.scss";
       display: flex;
       align-items: center;
       justify-content: right;
+      padding-right: 1%;
 
       a {
         width: 40px;
         height: 40px;
+        transition: all 0.25s ease;
+        border-radius: 50%;
+
+        &:hover {
+          transform: scale(1.125);
+          box-shadow: 0 0 7.5px rgb(70, 70, 70)
+        }
       }
     }
   }
