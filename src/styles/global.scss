@@ -9,11 +9,12 @@ $header-min-height: 100px;
 	box-sizing: border-box;
 	scrollbar-track-color: #ff3e3e;
 	scrollbar-color: #ff3e3e;
+	scroll-behavior: smooth;
 }
 
 ::selection {
 	background-color: $accent-red;
-	color: white
+	color: white;
 }
 
 /* Basic Styles */

@@ -18,16 +18,21 @@ const welcomeMessage = "Think outside the block.";
       <h2>Welcome to the 5921 website.</h2>
       <p>
         Hi! We're the Blockheads; a FIRST TECH CHALLENGE robotics team based in
-        La Canada California. We're a part of the La Canada Engineering Club,
-        and we're one of the two FTC teams that are a part of the organization.
-        Our team is the non-advanced team, so trust us when we say that we have
-        a long way to go. We're always learning and improving; this website will
-        be a sort home base for us to organize the documentation for our code,
-        CAD, and other stuff.
+        La Canada California. We're a part of the <a
+          href="https://lacanadaengineeringclub.org"
+          >La Canada Engineering Club</a
+        >, and we're one of the two FTC teams that are a part of the
+        organization. Our team is the non-advanced team, so trust us when we say
+        that we have a long way to go. We're always learning and improving; this
+        website will be a sort home base for us to organize the <a
+          href="/documentation">documentation</a
+        > for our code, CAD, and other stuff.
         <br />
         <br />
         Aside from that, not much to say! You can find some unfinished documentation
-        on this site and some more stuff about us, too. Obviously this website is not complete and is currently trash. The author will be adding more and more to it later on.
+        on this site and some more stuff about us, too. Obviously this website is
+        not complete and is currently trash. The author will be adding more and more
+        to it later on.
       </p>
     </section>
     <section id="image-container">
@@ -59,7 +64,11 @@ const welcomeMessage = "Think outside the block.";
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* Just for testing */
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
 
     section#text-container {
       border-bottom: rgb(68, 68, 68);

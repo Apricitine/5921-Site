@@ -13,7 +13,7 @@ const { route } = Astro.props;
   <head>
     <BaseHead title={`${route} | ${SITE_TITLE}`} />
   </head>
-  <body>
+  <body id="the-main">
     <Header />
     <main>
       <slot />
@@ -21,6 +21,10 @@ const { route } = Astro.props;
     <Footer />
     <style lang="scss">
       @import "../styles/global.scss";
+
+      html {
+        // vignette: 100px;
+      }
 
       main {
         padding: 1%;
