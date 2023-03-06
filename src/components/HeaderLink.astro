@@ -7,13 +7,13 @@ const { pathname } = Astro.url;
 const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 ---
 
-<a id="button" href={href} class:list={[className, { active: isActive }]} {...props}>
+<a class="button" id={typeof href === URL ? href?.toString() : href} href={href} class:list={[className, { active: isActive }]} {...props}>
 	<slot />
 </a>
 <style lang="scss">
 	@import '../styles/global.scss';
 
-	a#button {
+	a.button {
     padding: 1.7%;
     background: $accent-red;
     border-radius: 6px;

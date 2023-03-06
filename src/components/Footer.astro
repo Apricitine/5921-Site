@@ -46,6 +46,10 @@ const today = new Date();
         a#scrollup {
           color: white;
           text-decoration: none;
+
+          &:hover::before {
+            content: ". Click this";
+          }
         }
       }
     }

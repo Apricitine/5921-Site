@@ -4,7 +4,7 @@ author: Leo
 ---
 
 # **Our Programs**
-##### *Written By: Leo*
+##### *Written by: Leo*
 
 We have several programs with different features. Most of them are in Teamcode/src/main/java/org/firstinspires/ftc/teamcode. If a filepath is referred to, assume it's from teamcode with a lowercase t. From there, the auto and teleop folders are pretty self-explanatory, common is for files and classes used by both teleop and auto programs (such as the top limit of the lift), examples contains interesting examples that came with the FTC SDK, and roadrunner has stuff for roadrunner, a library that allows more complicated movement.
 
