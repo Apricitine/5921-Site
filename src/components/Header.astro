@@ -6,17 +6,15 @@ import "../styles/global.scss";
 <header>
   <nav>
     <section id="left-nav">
-      <section id="home-link">
-        <a href="/">
-          <img
-            src="/blockhead-ftc.png"
-            width="55px"
-            height="55px"
-            alt="blockheads icon for ftc"
-          />
-          <h2>BLOCKHEADS 5921</h2>
-        </a>
-      </section>
+      <a id="home-link" href="/">
+        <img
+          src="/blockhead-ftc.png"
+          width="55px"
+          height="55px"
+          alt="blockheads icon for ftc"
+        />
+        <h2>BLOCKHEADS 5921</h2>
+      </a>
 
       <HeaderLink id="about-link" href="/about">About</HeaderLink>
       <span>|</span>
@@ -108,9 +106,9 @@ import "../styles/global.scss";
     }
   }
 
-  section#home-link {
+  a#home-link {
     user-select: none;
-    width: 45%;
+    width: fit-content;
     border: 2px solid transparent;
     transition: all 0.125s ease-in-out;
     border-radius: 6px;
@@ -118,20 +116,14 @@ import "../styles/global.scss";
     padding-right: 2%;
     float: left;
     display: flex;
-    justify-content: space-between;
+    color: rgb(255, 62, 62);
+    text-decoration: none;
+    align-items: center;
+    white-space: nowrap;
 
     &:hover {
       border: 2px solid rgba(128, 128, 128, 0.251);
       background: radial-gradient(rgba(255, 255, 255, 0.08), transparent);
-    }
-
-    a {
-      color: rgb(255, 62, 62);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      width: 100%;
-      padding: 0;
     }
 
     h2 {
