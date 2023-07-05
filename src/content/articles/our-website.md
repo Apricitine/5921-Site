@@ -17,3 +17,5 @@ const { slug }: Params = Astro.params;
 const entry = await getEntryBySlug("articles", slug);
 const { Content } = entry === undefined ? new Error() : await entry.render();
 ```
+Lol that  as just a test to see if prettify was working
+Do u like the lchs color scheme?
